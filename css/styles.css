@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+:root{
+    --pink: #F2B5B6;
+    --light-gray: #E2E2E2;
+    --yellow: #F5E0CC;
+    --blue: #C3D9E8;
+    --dark-pink: #A46578;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 16px;
+}
+
+.main-container{
+    background-image: linear-gradient(to right top, #f2b5b6, #edc0cd, #e5ccdb, #e0d8e2, #e2e2e2);
+    padding: 0 5em;
+}
+
+.navbar-brand{
+    font-size: 1.5em;
+    color: var(--dark-pink);
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: var(--pink);
+}
+
+.btn{
+    background-color: var(--dark-pink);
+    color: whitesmoke;
+}
+
+.btn:hover{
+    background-color: var(--pink);
+    color: var(--dark-pink);
+}
+
+.banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-banner{
+    text-align: center;
+}
+
+.content-banner h1{
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.seccion{
+    margin-top: 100px;
+}
+
+.about-me .card-title{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--dark-pink);
+}
+
+.about-me .card-text{
+    color: var(--dark-pink);
+}
+
+.social-icons i{
+    font-size: 1.8em;
+    margin: 0.5em;
+    color: var(--pink);
+    cursor: pointer;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i:hover{
+    color: var(--dark-pink);
+}
+
+.seccion-title{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--dark-pink);
+    margin-bottom: 0.5em;
+}
+
+.services .card-title, .team .card-title{
+    font-weight: 700;
+    color: var(--dark-pink);
+}
+
+.services .card-text, .team .card-text{
+    color: var(--dark-pink);
+}
+
+.profile-photo img{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid var(--light-gray);
+}
+
+.profile-body{
+    color: var(--dark-pink);
+}
+
+.profile-name{
+    margin-top: 10px;
+    color: var(--dark-pink);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.carousel-inner{
+    min-height: 300px;
+}
+
+.carousel-item {
+    object-fit: contain;
+}
+
+.carousel-item img{
+    max-height: 500px;
+}
