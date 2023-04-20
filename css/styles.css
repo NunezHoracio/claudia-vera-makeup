@@ -3,9 +3,8 @@
 :root{
     --pink: #F2B5B6;
     --light-gray: #E2E2E2;
-    --yellow: #F5E0CC;
-    --blue: #C3D9E8;
     --dark-pink: #A46578;
+    --dark: #543F45;
 }
 
 *{
@@ -21,13 +20,20 @@ html{
 }
 
 .main-container{
-    background-image: linear-gradient(to right top, #f2b5b6, #edc0cd, #e5ccdb, #e0d8e2, #e2e2e2);
+    background-image: linear-gradient(to right top, #f2b5b6, #dfa0a6, #cb8c96, #b87887, #a46578);
+}
+
+main{
     padding: 0 5em;
 }
 
 .navbar-brand{
     font-size: 1.5em;
     color: var(--dark-pink);
+}
+
+.nav-link{
+    color: var(--dark);
 }
 
 .nav-link:hover, .navbar-brand:hover{
@@ -58,20 +64,29 @@ html{
 .content-banner h1{
     font-size: 5em;
     font-weight: 700;
+    color: var(--pink);
+}
+
+.content-banner h3{
+    color: var(--pink);
 }
 
 .seccion{
-    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.about-me .card{
+    box-shadow: 0 0 15px var(--dark-pink);
 }
 
 .about-me .card-title{
     font-size: 2.5em;
     font-weight: 700;
-    color: var(--dark-pink);
+    color: var(--dark);
 }
 
 .about-me .card-text{
-    color: var(--dark-pink);
+    color: var(--dark);
 }
 
 .social-icons i{
@@ -88,7 +103,7 @@ html{
 .seccion-title{
     font-size: 2.5em;
     font-weight: 700;
-    color: var(--dark-pink);
+    color: var(--dark);
     margin-bottom: 0.5em;
 }
 
@@ -97,18 +112,36 @@ html{
     color: var(--dark-pink);
 }
 
-.services .card-text, .team .card-text{
-    color: var(--dark-pink);
+.services .card-text, .team .profile-name, .team .profile-rol{
+    color: var(--dark);
 }
 
 .services .card{
+    height: 550px;
+    box-shadow: 0 0 15px var(--dark-pink);
+}
+
+.services .card-pic{
     object-fit: cover;
+    overflow: hidden;
+}
+
+.services .card-img-top{
+    max-height: 400px;
+}
+
+.team .profile-photo{
+    width: 250px;
+    height: 250px;
 }
 
 .profile-photo img{
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     border: 10px solid var(--light-gray);
+    filter: drop-shadow(0 0 15px var(--dark-pink));
 }
 
 .profile-body{
@@ -129,4 +162,10 @@ html{
 .carousel-item img{
     max-height: 500px;
     object-fit: contain;
+}
+
+footer{
+    background-color: var(--dark);
+    color: var(--light-gray);
+    height: 80px;
 }
