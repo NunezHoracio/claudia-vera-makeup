@@ -81,11 +81,6 @@ html{
     cursor: pointer;
 }
 
-.social-icons{
-    display: flex;
-    justify-content: center;
-}
-
 .social-icons i:hover{
     color: var(--dark-pink);
 }
@@ -104,6 +99,10 @@ html{
 
 .services .card-text, .team .card-text{
     color: var(--dark-pink);
+}
+
+.services .card{
+    object-fit: cover;
 }
 
 .profile-photo img{
@@ -127,10 +126,7 @@ html{
     min-height: 300px;
 }
 
-.carousel-item {
-    object-fit: contain;
-}
-
 .carousel-item img{
     max-height: 500px;
+    object-fit: contain;
 }
