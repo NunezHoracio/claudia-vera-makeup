@@ -14,26 +14,26 @@
         <header>
             <nav class="navbar navbar-expand-lg bg-light fixed-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#home">Claudia Vera</a>
+                  <a class="navbar-brand fw-bold" href="#home">Claudia Vera</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#about-me">Sobre mi</a>
+                      <li class="nav-item ms-3">
+                        <a class="nav-link fw-bold" aria-current="page" href="#about-me">Sobre mi</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
+                      <li class="nav-item ms-3">
+                        <a class="nav-link fw-bold" href="#services">Servicios</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#team">Mi equipo</a>
+                      <li class="nav-item ms-3">
+                        <a class="nav-link fw-bold" href="#team">Mi equipo</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#works">Trabajos</a>
+                      <li class="nav-item ms-3">
+                        <a class="nav-link fw-bold" href="#works">Trabajos</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactos</a>
+                      <li class="nav-item ms-3">
+                        <a class="nav-link fw-bold" href="#references">Referencias</a>
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -43,10 +43,10 @@
                 </div>
               </nav>
         </header>
-        <main>
+        <main class="p-3">
             <section class="banner" id="home">
                 <div class="content-banner">
-                    <h1>Claudia Vera</h1>
+                    <h1 class="main-title">Claudia Vera</h1>
                     <h3>Makeup and Hair</h3>
                 </div>
             </section>
@@ -56,15 +56,15 @@
                       <div class="col-md-4">
                         <img src="./images/perfil.jpg" class="img-fluid rounded-start" alt="profile photo">
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-md-8 col-sm-10">
                         <div class="card-body">
                           <h3 class="card-title">Sobre mi</h3>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore illum quos architecto obcaecati tempora reprehenderit facere alias fuga itaque consequatur vel laudantium, cum temporibus impedit iure non nobis explicabo?</p>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolore illum quos architecto obcaecati tempora reprehenderit facere alias fuga itaque consequatur vel laudantium, cum temporibus impedit iure non nobis explicabo?</p>
-                          <p class="social-icons">
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-tiktok"></i>
+                          <p class="social-icons d-flex justify-content-evenly justify-content-lg-start">
+                            <a href="https://www.instagram.com/claudiaveramakeup/" target="_blank" class="btn me-3 social-btn"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/claudiaveramaquillajeprof" target="_blank" class="btn me-3 social-btn"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@clauvera20" target="_blank" class="btn social-btn"><i class="bi bi-tiktok"></i></a>
                           </p>
                         </div>
                       </div>
@@ -112,7 +112,7 @@
             <section class="team seccion" id="team">
                 <h3 class="seccion-title">Les presento a mi equipo</h3>
                 <div class="team-container row d-flex justify-content-between">
-                    <div class="team-card col-12 col-md-3 mb-5">
+                    <div class="team-card col-12 col-md-3 mb-5 d-flex flex-column align-items-center">
                         <div class="profile-photo">
                             <img src="./images/perfil.jpg" alt="lujan profile photo">
                         </div>
@@ -121,7 +121,7 @@
                             <div class="profile-rol">Peinadora</div>
                         </div>
                     </div>                  
-                    <div class="team-card col-12 col-md-3 mb-5">
+                    <div class="team-card col-12 col-md-3 mb-5 d-flex flex-column align-items-center">
                         <div class="profile-photo">
                             <img src="./images/carolina-correa.jpg" alt="julieta profile photo">
                         </div>
@@ -130,7 +130,7 @@
                             <div class="profile-rol">Maquilladora</div>
                         </div>
                     </div>
-                    <div class="team-card col-12 col-md-3 mb-5">
+                    <div class="team-card col-12 col-md-3 mb-5 d-flex flex-column align-items-center">
                         <div class="profile-photo">
                           <img src="./images/carolina-correa.jpg" alt="carolina profile photo">
                         </div>
@@ -142,6 +142,7 @@
                 </div>
             </section>
             <section class="works seccion" id="works">
+              
                 <h3 class="seccion-title">Te mostramos algunos de nuestros trabajos</h3>
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -165,9 +166,32 @@
                   </button>
                 </div>
             </section>
+            <section class="references seccion" id="references">
+              <h3 class="seccion-title">Referencias de clientes</h3>
+              <div class="reference-card-container d-flex justify-content-between flex-wrap">
+                <div class="card text-bg-light mb-3" style="max-width: 25rem;">
+                  <div class="card-header"><h5 class="card-title"><i class="bi bi-person-heart reference-icon me-2"></i>Primary card title</h5></div>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card text-bg-light mb-3" style="max-width: 25rem;">
+                  <div class="card-header"><h5 class="card-title"><i class="bi bi-person-heart reference-icon me-2"></i>Primary card title</h5></div>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card text-bg-light mb-3" style="max-width: 25rem;">
+                  <div class="card-header"><h5 class="card-title"><i class="bi bi-person-heart reference-icon me-2"></i>Primary card title</h5></div>
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
         </main>
         <footer class="mt-5 d-flex justify-content-center align-items-center">
-          <span>Creado por MocaCode</span>
+          <span>Desarrollado por Horacio Nuñez</span>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

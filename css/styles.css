@@ -23,10 +23,6 @@ html{
     background-image: linear-gradient(to right top, #f2b5b6, #dfa0a6, #cb8c96, #b87887, #a46578);
 }
 
-main{
-    padding: 0 5em;
-}
-
 .navbar-brand{
     font-size: 1.5em;
     color: var(--dark-pink);
@@ -61,14 +57,23 @@ main{
     text-align: center;
 }
 
-.content-banner h1{
+.content-banner .main-title{
     font-size: 5em;
     font-weight: 700;
     color: var(--pink);
+    text-shadow: 0 0 20px rgba(0, 0, 0, .6);
+    animation: 2s ease-in-out infinite titleAnimation;
 }
+
+@keyframes titleAnimation {
+    0%   {text-shadow: 0 0 3px rgba(0, 0, 0, .6);}
+    50%  {text-shadow: 0 0 20px rgba(0, 0, 0, .6);}
+    100% {text-shadow: 0 0 3px rgba(0, 0, 0, .6);}
+  }
 
 .content-banner h3{
     color: var(--pink);
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
 .seccion{
@@ -96,7 +101,7 @@ main{
     cursor: pointer;
 }
 
-.social-icons i:hover{
+.social-btn:hover i{
     color: var(--dark-pink);
 }
 
@@ -107,7 +112,7 @@ main{
     margin-bottom: 0.5em;
 }
 
-.services .card-title, .team .card-title{
+.card-title{
     font-weight: 700;
     color: var(--dark-pink);
 }
@@ -162,6 +167,10 @@ main{
 .carousel-item img{
     max-height: 500px;
     object-fit: contain;
+}
+
+.reference-icon{
+    font-size: 2rem;
 }
 
 footer{
